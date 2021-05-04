@@ -17,9 +17,9 @@ pip install faust
 
 # Usage
 Make three different tabs in terminal:
-1) go into ttask/data_processing/ and run:
+1) go into data_processing/ and run:
 docker-compose -f docker-compose-kafka-zookeeper.yml up -d
-2) go into ttask/data_processing/ and run:
+2) go into data_processing/ and run:
 python kafka_producer.py
-3) go into ttask/data_processing/ and run:
+3) go into data_processing/ and run:
 faust -A product_counter worker -l info
